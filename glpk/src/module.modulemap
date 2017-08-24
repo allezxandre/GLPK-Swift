@@ -1,0 +1,16 @@
+module glpk [extern_c] {
+    header "bfd.h"
+    header "bfx.h"
+    header "draft.h"
+    header "glphbm.h"
+    header "glpios.h"
+    header "glpipm.h"
+    header "glpk.h"
+    header "glpmat.h"
+    header "glpnpp.h"
+    header "glprgr.h"
+    header "glpspm.h"
+    header "glpssx.h"
+    header "lux.h"
+    export *
+}
