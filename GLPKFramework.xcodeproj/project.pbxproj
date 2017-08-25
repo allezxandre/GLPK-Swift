@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ACD92A6D1F4F2086004D2CC7 /* GLPKFramework_MacOS.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD92A6B1F4F2086004D2CC7 /* GLPKFramework_MacOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ACD92A731F4F2631004D2CC7 /* glpk.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD92A721F4F2631004D2CC7 /* glpk.swift */; };
+		ACB0C2941F4F93BE001F10AE /* GLPKFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD92A6B1F4F2086004D2CC7 /* GLPKFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ACB0C2951F4F9B31001F10AE /* GLPKFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD92D031F4F37EF004D2CC7 /* GLPKFrameworkTests.swift */; };
+		ACB0C2971F4F9BAB001F10AE /* BoundType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB0C2961F4F9BAB001F10AE /* BoundType.swift */; };
+		ACB0C2981F4F9BAB001F10AE /* BoundType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB0C2961F4F9BAB001F10AE /* BoundType.swift */; };
+		ACD92A6D1F4F2086004D2CC7 /* GLPKFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD92A6B1F4F2086004D2CC7 /* GLPKFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ACD92A731F4F2631004D2CC7 /* GLPK.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD92A721F4F2631004D2CC7 /* GLPK.swift */; };
 		ACD92CF91F4F31BB004D2CC7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD92CF81F4F31BB004D2CC7 /* libz.tbd */; };
 		ACD92CFC1F4F356F004D2CC7 /* libiodbc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD92CFB1F4F356F004D2CC7 /* libiodbc.tbd */; };
-		ACD92D041F4F37EF004D2CC7 /* GLPKFramework_MacOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD92D031F4F37EF004D2CC7 /* GLPKFramework_MacOSTests.swift */; };
+		ACD92D041F4F37EF004D2CC7 /* GLPKFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD92D031F4F37EF004D2CC7 /* GLPKFrameworkTests.swift */; };
 		ACD92D061F4F37EF004D2CC7 /* GLPKFramework_MacOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD92A681F4F2086004D2CC7 /* GLPKFramework_MacOS.framework */; };
 		ACD92D1A1F4F388B004D2CC7 /* GLPKFramework_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD92D111F4F388B004D2CC7 /* GLPKFramework_iOS.framework */; };
-		ACD92D1F1F4F388B004D2CC7 /* GLPKFramework_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD92D1E1F4F388B004D2CC7 /* GLPKFramework_iOSTests.swift */; };
-		ACD92D211F4F388B004D2CC7 /* GLPKFramework_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD92D131F4F388B004D2CC7 /* GLPKFramework_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ACD937B51F4F3A4B004D2CC7 /* bfd.c in Sources */ = {isa = PBXBuildFile; fileRef = ACD935DA1F4F3A4A004D2CC7 /* bfd.c */; };
 		ACD937B61F4F3A4B004D2CC7 /* mc13d.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD935DC1F4F3A4A004D2CC7 /* mc13d.h */; };
 		ACD937B71F4F3A4B004D2CC7 /* triang.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD935DD1F4F3A4A004D2CC7 /* triang.h */; };
@@ -725,7 +727,7 @@
 		ACD93A771F4F3B75004D2CC7 /* wrcnf.c in Sources */ = {isa = PBXBuildFile; fileRef = ACD936AF1F4F3A4B004D2CC7 /* wrcnf.c */; };
 		ACD93A781F4F3B75004D2CC7 /* rng.c in Sources */ = {isa = PBXBuildFile; fileRef = ACD936031F4F3A4A004D2CC7 /* rng.c */; };
 		ACD93A791F4F3B75004D2CC7 /* glpspm.c in Sources */ = {isa = PBXBuildFile; fileRef = ACD937971F4F3A4B004D2CC7 /* glpspm.c */; };
-		ACD93A7A1F4F3B75004D2CC7 /* glpk.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD92A721F4F2631004D2CC7 /* glpk.swift */; };
+		ACD93A7A1F4F3B75004D2CC7 /* GLPK.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD92A721F4F2631004D2CC7 /* GLPK.swift */; };
 		ACD93A7B1F4F3B75004D2CC7 /* glphbm.c in Sources */ = {isa = PBXBuildFile; fileRef = ACD936291F4F3A4A004D2CC7 /* glphbm.c */; };
 		ACD93A7C1F4F3B75004D2CC7 /* amd_valid.c in Sources */ = {isa = PBXBuildFile; fileRef = ACD936631F4F3A4B004D2CC7 /* amd_valid.c */; };
 		ACD93A7D1F4F3B75004D2CC7 /* mcfokalg.c in Sources */ = {isa = PBXBuildFile; fileRef = ACD936AB1F4F3A4B004D2CC7 /* mcfokalg.c */; };
@@ -763,21 +765,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ACB0C2961F4F9BAB001F10AE /* BoundType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundType.swift; sourceTree = "<group>"; };
 		ACD92A681F4F2086004D2CC7 /* GLPKFramework_MacOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GLPKFramework_MacOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACD92A6B1F4F2086004D2CC7 /* GLPKFramework_MacOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLPKFramework_MacOS.h; sourceTree = "<group>"; };
+		ACD92A6B1F4F2086004D2CC7 /* GLPKFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLPKFramework.h; sourceTree = "<group>"; };
 		ACD92A6C1F4F2086004D2CC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ACD92A721F4F2631004D2CC7 /* glpk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = glpk.swift; sourceTree = "<group>"; };
+		ACD92A721F4F2631004D2CC7 /* GLPK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLPK.swift; sourceTree = "<group>"; };
 		ACD92CF81F4F31BB004D2CC7 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		ACD92CFB1F4F356F004D2CC7 /* libiodbc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiodbc.tbd; path = usr/lib/libiodbc.tbd; sourceTree = SDKROOT; };
 		ACD92D011F4F37EF004D2CC7 /* GLPKFramework_MacOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GLPKFramework_MacOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACD92D031F4F37EF004D2CC7 /* GLPKFramework_MacOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLPKFramework_MacOSTests.swift; sourceTree = "<group>"; };
+		ACD92D031F4F37EF004D2CC7 /* GLPKFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLPKFrameworkTests.swift; sourceTree = "<group>"; };
 		ACD92D051F4F37EF004D2CC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACD92D111F4F388B004D2CC7 /* GLPKFramework_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GLPKFramework_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACD92D131F4F388B004D2CC7 /* GLPKFramework_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLPKFramework_iOS.h; sourceTree = "<group>"; };
-		ACD92D141F4F388B004D2CC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACD92D191F4F388B004D2CC7 /* GLPKFramework_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GLPKFramework_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACD92D1E1F4F388B004D2CC7 /* GLPKFramework_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GLPKFramework_iOSTests.swift; sourceTree = "<group>"; };
-		ACD92D201F4F388B004D2CC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACD935DA1F4F3A4A004D2CC7 /* bfd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bfd.c; sourceTree = "<group>"; };
 		ACD935DC1F4F3A4A004D2CC7 /* mc13d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mc13d.h; sourceTree = "<group>"; };
 		ACD935DD1F4F3A4A004D2CC7 /* triang.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = triang.h; sourceTree = "<group>"; };
@@ -1240,8 +1239,6 @@
 		ACD937B21F4F3A4B004D2CC7 /* scfint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scfint.h; sourceTree = "<group>"; };
 		ACD937B31F4F3A4B004D2CC7 /* fhvint.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fhvint.c; sourceTree = "<group>"; };
 		ACD937B41F4F3A4B004D2CC7 /* sva.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sva.h; sourceTree = "<group>"; };
-		ACD93A8D1F4F790C004D2CC7 /* GLPKFramework_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLPKFramework_iOS.h; sourceTree = "<group>"; };
-		ACD93A8E1F4F790C004D2CC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1284,11 +1281,8 @@
 			isa = PBXGroup;
 			children = (
 				ACD92A741F4F275C004D2CC7 /* Source */,
-				ACD93A8F1F4F7C70004D2CC7 /* GLPK */,
-				ACD92D121F4F388B004D2CC7 /* GLPKFramework_iOS */,
-				ACD92A6A1F4F2086004D2CC7 /* GLPKFramework_MacOS */,
-				ACD92D021F4F37EF004D2CC7 /* GLPKFramework_MacOSTests */,
-				ACD92D1D1F4F388B004D2CC7 /* GLPKFramework_iOSTests */,
+				ACD92D021F4F37EF004D2CC7 /* Tests */,
+				ACD93A8F1F4F7C70004D2CC7 /* GLPK C Library */,
 				ACD92A691F4F2086004D2CC7 /* Products */,
 				ACD92CF71F4F31BB004D2CC7 /* Frameworks */,
 			);
@@ -1305,19 +1299,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ACD92A6A1F4F2086004D2CC7 /* GLPKFramework_MacOS */ = {
-			isa = PBXGroup;
-			children = (
-				ACD92A6B1F4F2086004D2CC7 /* GLPKFramework_MacOS.h */,
-				ACD92A6C1F4F2086004D2CC7 /* Info.plist */,
-			);
-			path = GLPKFramework_MacOS;
-			sourceTree = "<group>";
-		};
 		ACD92A741F4F275C004D2CC7 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				ACD92A721F4F2631004D2CC7 /* glpk.swift */,
+				ACD92A721F4F2631004D2CC7 /* GLPK.swift */,
+				ACB0C2961F4F9BAB001F10AE /* BoundType.swift */,
+				ACD92A6B1F4F2086004D2CC7 /* GLPKFramework.h */,
+				ACD92A6C1F4F2086004D2CC7 /* Info.plist */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -1331,37 +1319,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		ACD92D021F4F37EF004D2CC7 /* GLPKFramework_MacOSTests */ = {
+		ACD92D021F4F37EF004D2CC7 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				ACD92D031F4F37EF004D2CC7 /* GLPKFramework_MacOSTests.swift */,
+				ACD92D031F4F37EF004D2CC7 /* GLPKFrameworkTests.swift */,
 				ACD92D051F4F37EF004D2CC7 /* Info.plist */,
 			);
-			path = GLPKFramework_MacOSTests;
-			sourceTree = "<group>";
-		};
-		ACD92D121F4F388B004D2CC7 /* GLPKFramework_iOS */ = {
-			isa = PBXGroup;
-			children = (
-				ACD92D131F4F388B004D2CC7 /* GLPKFramework_iOS.h */,
-				ACD92D141F4F388B004D2CC7 /* Info.plist */,
-			);
-			path = GLPKFramework_iOS;
-			sourceTree = "<group>";
-		};
-		ACD92D1D1F4F388B004D2CC7 /* GLPKFramework_iOSTests */ = {
-			isa = PBXGroup;
-			children = (
-				ACD92D1E1F4F388B004D2CC7 /* GLPKFramework_iOSTests.swift */,
-				ACD92D201F4F388B004D2CC7 /* Info.plist */,
-			);
-			path = GLPKFramework_iOSTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		ACD935D91F4F3A4A004D2CC7 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				ACD93A8C1F4F790C004D2CC7 /* GLPKFramework_iOS */,
 				ACD935DA1F4F3A4A004D2CC7 /* bfd.c */,
 				ACD935DB1F4F3A4A004D2CC7 /* misc */,
 				ACD936071F4F3A4A004D2CC7 /* glpios02.c */,
@@ -1933,21 +1902,12 @@
 			path = bflib;
 			sourceTree = "<group>";
 		};
-		ACD93A8C1F4F790C004D2CC7 /* GLPKFramework_iOS */ = {
-			isa = PBXGroup;
-			children = (
-				ACD93A8D1F4F790C004D2CC7 /* GLPKFramework_iOS.h */,
-				ACD93A8E1F4F790C004D2CC7 /* Info.plist */,
-			);
-			path = GLPKFramework_iOS;
-			sourceTree = SOURCE_ROOT;
-		};
-		ACD93A8F1F4F7C70004D2CC7 /* GLPK */ = {
+		ACD93A8F1F4F7C70004D2CC7 /* GLPK C Library */ = {
 			isa = PBXGroup;
 			children = (
 				ACD935D91F4F3A4A004D2CC7 /* src */,
 			);
-			name = GLPK;
+			name = "GLPK C Library";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1969,7 +1929,7 @@
 				ACD938411F4F3A4B004D2CC7 /* spychuzc.h in Headers */,
 				ACD937E01F4F3A4B004D2CC7 /* mygmp.h in Headers */,
 				ACD938161F4F3A4B004D2CC7 /* inflate.h in Headers */,
-				ACD92A6D1F4F2086004D2CC7 /* GLPKFramework_MacOS.h in Headers */,
+				ACD92A6D1F4F2086004D2CC7 /* GLPKFramework.h in Headers */,
 				ACD9380B1F4F3A4B004D2CC7 /* inffixed.h in Headers */,
 				ACD938141F4F3A4B004D2CC7 /* zlib.h in Headers */,
 				ACD937ED1F4F3A4B004D2CC7 /* glpspm.h in Headers */,
@@ -2041,6 +2001,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACB0C2941F4F93BE001F10AE /* GLPKFramework.h in Headers */,
 				ACD939821F4F3AD7004D2CC7 /* sva.h in Headers */,
 				ACD939831F4F3AD7004D2CC7 /* lufint.h in Headers */,
 				ACD939841F4F3AD7004D2CC7 /* scfint.h in Headers */,
@@ -2053,7 +2014,6 @@
 				ACD9398B1F4F3AD7004D2CC7 /* spychuzc.h in Headers */,
 				ACD9398C1F4F3AD7004D2CC7 /* mygmp.h in Headers */,
 				ACD9398D1F4F3AD7004D2CC7 /* inflate.h in Headers */,
-				ACD92D211F4F388B004D2CC7 /* GLPKFramework_iOS.h in Headers */,
 				ACD9398E1F4F3AD7004D2CC7 /* inffixed.h in Headers */,
 				ACD9398F1F4F3AD7004D2CC7 /* zlib.h in Headers */,
 				ACD939901F4F3AD7004D2CC7 /* glpspm.h in Headers */,
@@ -2539,6 +2499,7 @@
 				ACD937E81F4F3A4B004D2CC7 /* bfx.c in Sources */,
 				ACD938611F4F3A4C004D2CC7 /* minisat1.c in Sources */,
 				ACD9388F1F4F3A4C004D2CC7 /* asnhall.c in Sources */,
+				ACB0C2971F4F9BAB001F10AE /* BoundType.swift in Sources */,
 				ACD937FC1F4F3A4B004D2CC7 /* glpmat.c in Sources */,
 				ACD938501F4F3A4C004D2CC7 /* spychuzr.c in Sources */,
 				ACD937EE1F4F3A4B004D2CC7 /* glpios01.c in Sources */,
@@ -2648,7 +2609,7 @@
 				ACD938801F4F3A4C004D2CC7 /* wrcnf.c in Sources */,
 				ACD937DD1F4F3A4B004D2CC7 /* rng.c in Sources */,
 				ACD939651F4F3A4C004D2CC7 /* glpspm.c in Sources */,
-				ACD92A731F4F2631004D2CC7 /* glpk.swift in Sources */,
+				ACD92A731F4F2631004D2CC7 /* GLPK.swift in Sources */,
 				ACD938001F4F3A4B004D2CC7 /* glphbm.c in Sources */,
 				ACD938371F4F3A4B004D2CC7 /* amd_valid.c in Sources */,
 				ACD9387C1F4F3A4C004D2CC7 /* mcfokalg.c in Sources */,
@@ -2673,7 +2634,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACD92D041F4F37EF004D2CC7 /* GLPKFramework_MacOSTests.swift in Sources */,
+				ACD92D041F4F37EF004D2CC7 /* GLPKFrameworkTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2744,6 +2705,7 @@
 				ACD93A0A1F4F3B75004D2CC7 /* bfx.c in Sources */,
 				ACD93A0B1F4F3B75004D2CC7 /* minisat1.c in Sources */,
 				ACD93A0C1F4F3B75004D2CC7 /* asnhall.c in Sources */,
+				ACB0C2981F4F9BAB001F10AE /* BoundType.swift in Sources */,
 				ACD93A0D1F4F3B75004D2CC7 /* glpmat.c in Sources */,
 				ACD93A0E1F4F3B75004D2CC7 /* spychuzr.c in Sources */,
 				ACD93A0F1F4F3B75004D2CC7 /* glpios01.c in Sources */,
@@ -2853,7 +2815,7 @@
 				ACD93A771F4F3B75004D2CC7 /* wrcnf.c in Sources */,
 				ACD93A781F4F3B75004D2CC7 /* rng.c in Sources */,
 				ACD93A791F4F3B75004D2CC7 /* glpspm.c in Sources */,
-				ACD93A7A1F4F3B75004D2CC7 /* glpk.swift in Sources */,
+				ACD93A7A1F4F3B75004D2CC7 /* GLPK.swift in Sources */,
 				ACD93A7B1F4F3B75004D2CC7 /* glphbm.c in Sources */,
 				ACD93A7C1F4F3B75004D2CC7 /* amd_valid.c in Sources */,
 				ACD93A7D1F4F3B75004D2CC7 /* mcfokalg.c in Sources */,
@@ -2878,7 +2840,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACD92D1F1F4F388B004D2CC7 /* GLPKFramework_iOSTests.swift in Sources */,
+				ACB0C2951F4F9B31001F10AE /* GLPKFrameworkTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2967,7 +2929,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = GLPKFramework_MacOS/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
@@ -3037,7 +2999,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = GLPKFramework_MacOS/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
@@ -3105,7 +3067,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = GLPKFramework_MacOSTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -3164,7 +3126,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = GLPKFramework_MacOSTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -3231,7 +3193,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = GLPKFramework_iOS/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -3300,7 +3262,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = GLPKFramework_iOS/Info.plist;
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -3370,7 +3332,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = GLPKFramework_iOSTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -3430,7 +3392,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = GLPKFramework_iOSTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
