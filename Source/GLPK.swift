@@ -23,13 +23,35 @@ public class SwiftGLPK {
         self.problemPointer = glp_create_prob()
     }
     
-    convenience init(name: String) {
+    convenience init(name: String, direction: Direction? = nil) {
         self.init()
         glp_set_prob_name(self.problemPointer, name)
+        if let direction = direction { self.direction = direction }
+    }
+    
+    deinit {
+        glp_delete_prob(problemPointer)
     }
     
     // MARK: - Basics
     // MARK: Problem creating and modifying
+    
+    /// Erases the content of the problem object.
+    public func reset() {
+        glp_erase_prob(problemPointer)
+    }
+    
+    /// The optimization direction flag (i.e. “sense” of the objective function)
+    /// - note: By default the problem is minimization.
+    var direction: Direction {
+        get {
+            return Direction(fromIntegerValue: glp_get_obj_dir(self.problemPointer))
+        }
+        set(newDirection) {
+            glp_set_obj_dir(self.problemPointer, newDirection.integerValue)
+        }
+    }
+    
     /**
      Adds `amount` rows (constraints) to the problem object.
      New rows are always added to the end of the row list, so the ordinal numbers of existing rows are not changed.
@@ -191,6 +213,123 @@ public class SwiftGLPK {
         warnCast()
         self.set(bound: bound, forColumn: Int32(j))
     }
+    
+    /**
+     Sets (changes) the objective coefficient at j-th column (structural variable).
+     
+     - parameter coef: The new value of the objective coefficient.
+     - parameter j: The index of the column on which the coefficient will be applied.
+                    If the parameter is 0, the routine sets (changes) the constant term (“shift”) of the objective function.
+     */
+    public func set(coef: Double, forColumn j: Int32) {
+        glp_set_obj_coef(problemPointer, j, coef)
+    }
+    
+    /**
+     Sets (changes) the objective coefficient at j-th column (structural variable).
+     
+     - parameter coef: The new value of the objective coefficient.
+     - parameter j: The index of the column on which the coefficient will be applied.
+     If the parameter is 0, the routine sets (changes) the constant term (“shift”) of the objective function.
+     
+     - important: The column parameter will be cast to a 32bit integer.
+     */
+    public func set(coef: Double, forColumn j: Int) {
+        warnCast()
+        self.set(coef: coef, forColumn: j)
+    }
+    
+    public func loadConstraintMatrix(rowIndices: [Int32], columnIndices: [Int32], values: [Double]) {
+        let n = Int32(values.count)
+        assert(rowIndices.count == n,
+               "Unexpected number of row indices. Expected \(n) indices but only \(rowIndices.count) were specified.")
+        assert(columnIndices.count == n,
+               "Unexpected number of column indices. Expected \(n) indices but only \(columnIndices.count) were specified.")
+        let rowIndices = [0] + rowIndices // Because indices start at 1
+        let columnIndices = [0] + columnIndices
+        let values = [0] + values
+        glp_load_matrix(problemPointer, n, rowIndices, columnIndices, values)
+    }
+    
+    // MARK: Shorthand
+    /**
+     Add a new row (auxiliary variable) to the current problem.
+     
+     - parameter name: An optional name to use for the variable.
+     - parameter bound: The bounds to apply to the variable.
+     
+     - returns: The `i` index of the new row.
+     */
+    @discardableResult public func addRow(withName name: String?, andBound bound: BoundType) -> Int {
+        let rowIndex = self.addRows(amount: Int32(1))
+        self.set(name: name, forRow: Int32(rowIndex))
+        self.set(bound: bound, forRow: Int32(rowIndex))
+        return rowIndex
+    }
+    
+    /**
+     Add a new column (structural variable) to the current problem.
+     
+     - parameter name: An optional name to use for the variable.
+     - parameter bound: The bounds to apply to the variable.
+     - parameter coef: An optional coefficient to apply to the variable in the objective function.
+     
+     - returns: The `j` index of the new column.
+     */
+    @discardableResult public func addColumn(withName name: String?, andBound bound: BoundType, usingCoefficient coef: Double? = nil) -> Int {
+        let columnIndex = self.addCols(amount: Int32(1))
+        self.set(name: name, forColumn: Int32(columnIndex))
+        self.set(bound: bound, forColumn: Int32(columnIndex))
+        if let coef = coef { self.set(coef: coef, forColumn: Int32(columnIndex)) }
+        return columnIndex
+    }
+    
+    /**
+     Load a matrix by giving its values ordered by row.
+     
+     To represent the following example matrix:
+     ````
+     1 2
+     3 4
+     5 6
+     ````
+     use the following argument for `matrix`:
+     ````
+     [[1, 2], [3, 4], [5, 6]]
+     ````
+     
+     - parameter matrix: An array of an array of the values to use.
+     */
+    public func loadConstraintMatrix(valuesByRow matrix: [[Double]]) {
+        var rows = [Int32]()
+        var columns = [Int32]()
+        var values = [Double]()
+        var i: Int32 = 1
+        for row in matrix {
+            var j: Int32 = 1
+            for value in row {
+                rows.append(i)
+                columns.append(j)
+                values.append(value)
+                j += 1
+            }
+            i += 1
+        }
+        self.loadConstraintMatrix(rowIndices: rows, columnIndices: columns, values: values)
+    }
+    
+    /// Retrieves problem data from the specified problem object, calls the solver to solve the problem instance, and stores results of computations back into the problem object.
+    /// - ToDo: Implement simplex arguments in Swift.
+    public func simplex() {
+        glp_simplex(problemPointer, nil)
+    }
+    
+    
+    /// Returns the current value of the objective function.
+    var functionValue: Double {
+        return glp_get_obj_val(problemPointer)
+    }
+    
     
     // MARK: - Utilities
     func warn(message: String, function: StaticString = #function) {

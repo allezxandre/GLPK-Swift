@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC427BC41F5089120043E1B6 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC427BC31F5089120043E1B6 /* Direction.swift */; };
+		AC427BC51F5089120043E1B6 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC427BC31F5089120043E1B6 /* Direction.swift */; };
 		ACB0C2941F4F93BE001F10AE /* GLPKFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD92A6B1F4F2086004D2CC7 /* GLPKFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ACB0C2951F4F9B31001F10AE /* GLPKFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD92D031F4F37EF004D2CC7 /* GLPKFrameworkTests.swift */; };
 		ACB0C2971F4F9BAB001F10AE /* BoundType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB0C2961F4F9BAB001F10AE /* BoundType.swift */; };
 		ACB0C2981F4F9BAB001F10AE /* BoundType.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB0C2961F4F9BAB001F10AE /* BoundType.swift */; };
 		ACD92A6D1F4F2086004D2CC7 /* GLPKFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD92A6B1F4F2086004D2CC7 /* GLPKFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ACD92A731F4F2631004D2CC7 /* GLPK.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD92A721F4F2631004D2CC7 /* GLPK.swift */; };
-		ACD92CF91F4F31BB004D2CC7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD92CF81F4F31BB004D2CC7 /* libz.tbd */; };
-		ACD92CFC1F4F356F004D2CC7 /* libiodbc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD92CFB1F4F356F004D2CC7 /* libiodbc.tbd */; };
 		ACD92D041F4F37EF004D2CC7 /* GLPKFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD92D031F4F37EF004D2CC7 /* GLPKFrameworkTests.swift */; };
 		ACD92D061F4F37EF004D2CC7 /* GLPKFramework_MacOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD92A681F4F2086004D2CC7 /* GLPKFramework_MacOS.framework */; };
 		ACD92D1A1F4F388B004D2CC7 /* GLPKFramework_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD92D111F4F388B004D2CC7 /* GLPKFramework_iOS.framework */; };
@@ -77,14 +77,9 @@
 		ACD937ED1F4F3A4B004D2CC7 /* glpspm.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD936141F4F3A4A004D2CC7 /* glpspm.h */; };
 		ACD937EE1F4F3A4B004D2CC7 /* glpios01.c in Sources */ = {isa = PBXBuildFile; fileRef = ACD936151F4F3A4A004D2CC7 /* glpios01.c */; };
 		ACD937EF1F4F3A4B004D2CC7 /* colamd.c in Sources */ = {isa = PBXBuildFile; fileRef = ACD936171F4F3A4A004D2CC7 /* colamd.c */; };
-		ACD937F01F4F3A4B004D2CC7 /* README in Resources */ = {isa = PBXBuildFile; fileRef = ACD936181F4F3A4A004D2CC7 /* README */; };
 		ACD937F11F4F3A4B004D2CC7 /* colamd.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD936191F4F3A4A004D2CC7 /* colamd.h */; };
-		ACD937F21F4F3A4B004D2CC7 /* COPYING in Resources */ = {isa = PBXBuildFile; fileRef = ACD9361A1F4F3A4A004D2CC7 /* COPYING */; };
-		ACD937F31F4F3A4B004D2CC7 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = ACD9361B1F4F3A4A004D2CC7 /* Makefile */; };
 		ACD937F41F4F3A4B004D2CC7 /* glpapi12.c in Sources */ = {isa = PBXBuildFile; fileRef = ACD9361C1F4F3A4A004D2CC7 /* glpapi12.c */; };
-		ACD937F51F4F3A4B004D2CC7 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = ACD9361E1F4F3A4A004D2CC7 /* LICENSE */; };
 		ACD937F61F4F3A4B004D2CC7 /* minisat.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD9361F1F4F3A4A004D2CC7 /* minisat.h */; };
-		ACD937F71F4F3A4B004D2CC7 /* README in Resources */ = {isa = PBXBuildFile; fileRef = ACD936201F4F3A4A004D2CC7 /* README */; };
 		ACD937F81F4F3A4B004D2CC7 /* minisat.c in Sources */ = {isa = PBXBuildFile; fileRef = ACD936211F4F3A4A004D2CC7 /* minisat.c */; };
 		ACD937F91F4F3A4B004D2CC7 /* glprgr.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD936221F4F3A4A004D2CC7 /* glprgr.h */; };
 		ACD937FA1F4F3A4B004D2CC7 /* draft.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD936231F4F3A4A004D2CC7 /* draft.h */; };
@@ -109,7 +104,6 @@
 		ACD9380D1F4F3A4B004D2CC7 /* trees.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD936371F4F3A4A004D2CC7 /* trees.h */; };
 		ACD9380E1F4F3A4B004D2CC7 /* inffast.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD936381F4F3A4A004D2CC7 /* inffast.h */; };
 		ACD9380F1F4F3A4B004D2CC7 /* crc32.c in Sources */ = {isa = PBXBuildFile; fileRef = ACD936391F4F3A4A004D2CC7 /* crc32.c */; };
-		ACD938101F4F3A4B004D2CC7 /* README in Resources */ = {isa = PBXBuildFile; fileRef = ACD9363A1F4F3A4A004D2CC7 /* README */; };
 		ACD938111F4F3A4B004D2CC7 /* zutil.c in Sources */ = {isa = PBXBuildFile; fileRef = ACD9363B1F4F3A4A004D2CC7 /* zutil.c */; };
 		ACD938121F4F3A4B004D2CC7 /* deflate.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD9363C1F4F3A4A004D2CC7 /* deflate.h */; };
 		ACD938131F4F3A4B004D2CC7 /* gzguts.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD9363D1F4F3A4A004D2CC7 /* gzguts.h */; };
@@ -140,11 +134,9 @@
 		ACD9382C1F4F3A4B004D2CC7 /* dlsup.c in Sources */ = {isa = PBXBuildFile; fileRef = ACD936571F4F3A4B004D2CC7 /* dlsup.c */; };
 		ACD9382D1F4F3A4B004D2CC7 /* stream.c in Sources */ = {isa = PBXBuildFile; fileRef = ACD936581F4F3A4B004D2CC7 /* stream.c */; };
 		ACD9382E1F4F3A4B004D2CC7 /* amd_info.c in Sources */ = {isa = PBXBuildFile; fileRef = ACD9365A1F4F3A4B004D2CC7 /* amd_info.c */; };
-		ACD9382F1F4F3A4B004D2CC7 /* README in Resources */ = {isa = PBXBuildFile; fileRef = ACD9365B1F4F3A4B004D2CC7 /* README */; };
 		ACD938301F4F3A4B004D2CC7 /* amd_preprocess.c in Sources */ = {isa = PBXBuildFile; fileRef = ACD9365C1F4F3A4B004D2CC7 /* amd_preprocess.c */; };
 		ACD938311F4F3A4B004D2CC7 /* amd_defaults.c in Sources */ = {isa = PBXBuildFile; fileRef = ACD9365D1F4F3A4B004D2CC7 /* amd_defaults.c */; };
 		ACD938321F4F3A4B004D2CC7 /* amd_post_tree.c in Sources */ = {isa = PBXBuildFile; fileRef = ACD9365E1F4F3A4B004D2CC7 /* amd_post_tree.c */; };
-		ACD938331F4F3A4B004D2CC7 /* COPYING in Resources */ = {isa = PBXBuildFile; fileRef = ACD9365F1F4F3A4B004D2CC7 /* COPYING */; };
 		ACD938341F4F3A4B004D2CC7 /* amd_1.c in Sources */ = {isa = PBXBuildFile; fileRef = ACD936601F4F3A4B004D2CC7 /* amd_1.c */; };
 		ACD938351F4F3A4B004D2CC7 /* amd_postorder.c in Sources */ = {isa = PBXBuildFile; fileRef = ACD936611F4F3A4B004D2CC7 /* amd_postorder.c */; };
 		ACD938361F4F3A4B004D2CC7 /* amd_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD936621F4F3A4B004D2CC7 /* amd_internal.h */; };
@@ -451,7 +443,6 @@
 		ACD939631F4F3A4C004D2CC7 /* libglpk_la-mpl.Plo in Resources */ = {isa = PBXBuildFile; fileRef = ACD937951F4F3A4B004D2CC7 /* libglpk_la-mpl.Plo */; };
 		ACD939641F4F3A4C004D2CC7 /* libglpk_la-glprgr.Plo in Resources */ = {isa = PBXBuildFile; fileRef = ACD937961F4F3A4B004D2CC7 /* libglpk_la-glprgr.Plo */; };
 		ACD939651F4F3A4C004D2CC7 /* glpspm.c in Sources */ = {isa = PBXBuildFile; fileRef = ACD937971F4F3A4B004D2CC7 /* glpspm.c */; };
-		ACD939661F4F3A4C004D2CC7 /* Makefile.in in Resources */ = {isa = PBXBuildFile; fileRef = ACD937981F4F3A4B004D2CC7 /* Makefile.in */; };
 		ACD939671F4F3A4C004D2CC7 /* glpnpp03.c in Sources */ = {isa = PBXBuildFile; fileRef = ACD937991F4F3A4B004D2CC7 /* glpnpp03.c */; };
 		ACD939681F4F3A4C004D2CC7 /* glpios.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD9379A1F4F3A4B004D2CC7 /* glpios.h */; };
 		ACD939691F4F3A4C004D2CC7 /* glphbm.h in Headers */ = {isa = PBXBuildFile; fileRef = ACD9379B1F4F3A4B004D2CC7 /* glphbm.h */; };
@@ -765,6 +756,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AC427B821F503D340043E1B6 /* gmpl_es.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = gmpl_es.pdf; sourceTree = "<group>"; };
+		AC427B891F503D340043E1B6 /* cnfsat.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = cnfsat.pdf; sourceTree = "<group>"; };
+		AC427B8A1F503D340043E1B6 /* gmpl_pt-BR.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "gmpl_pt-BR.pdf"; sourceTree = "<group>"; };
+		AC427B901F503D340043E1B6 /* gmpl.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = gmpl.pdf; sourceTree = "<group>"; };
+		AC427B9D1F503D340043E1B6 /* graphs.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = graphs.pdf; sourceTree = "<group>"; };
+		AC427BA21F503D340043E1B6 /* glpk.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = glpk.pdf; sourceTree = "<group>"; };
+		AC427BC31F5089120043E1B6 /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
 		ACB0C2961F4F9BAB001F10AE /* BoundType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoundType.swift; sourceTree = "<group>"; };
 		ACD92A681F4F2086004D2CC7 /* GLPKFramework_MacOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GLPKFramework_MacOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACD92A6B1F4F2086004D2CC7 /* GLPKFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLPKFramework.h; sourceTree = "<group>"; };
@@ -1246,8 +1244,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACD92CFC1F4F356F004D2CC7 /* libiodbc.tbd in Frameworks */,
-				ACD92CF91F4F31BB004D2CC7 /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1277,6 +1273,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC427B811F503D340043E1B6 /* doc */ = {
+			isa = PBXGroup;
+			children = (
+				AC427B821F503D340043E1B6 /* gmpl_es.pdf */,
+				AC427B891F503D340043E1B6 /* cnfsat.pdf */,
+				AC427B8A1F503D340043E1B6 /* gmpl_pt-BR.pdf */,
+				AC427B901F503D340043E1B6 /* gmpl.pdf */,
+				AC427B9D1F503D340043E1B6 /* graphs.pdf */,
+				AC427BA21F503D340043E1B6 /* glpk.pdf */,
+			);
+			name = doc;
+			path = glpk/doc;
+			sourceTree = "<group>";
+		};
 		ACD9283E1F4F1EB2004D2CC7 = {
 			isa = PBXGroup;
 			children = (
@@ -1304,6 +1314,7 @@
 			children = (
 				ACD92A721F4F2631004D2CC7 /* GLPK.swift */,
 				ACB0C2961F4F9BAB001F10AE /* BoundType.swift */,
+				AC427BC31F5089120043E1B6 /* Direction.swift */,
 				ACD92A6B1F4F2086004D2CC7 /* GLPKFramework.h */,
 				ACD92A6C1F4F2086004D2CC7 /* Info.plist */,
 			);
@@ -1905,6 +1916,7 @@
 		ACD93A8F1F4F7C70004D2CC7 /* GLPK C Library */ = {
 			isa = PBXGroup;
 			children = (
+				AC427B811F503D340043E1B6 /* doc */,
 				ACD935D91F4F3A4A004D2CC7 /* src */,
 			);
 			name = "GLPK C Library";
@@ -2219,7 +2231,6 @@
 				ACD938D71F4F3A4C004D2CC7 /* libglpk_la-round2n.Plo in Resources */,
 				ACD939081F4F3A4C004D2CC7 /* libglpk_la-glpapi09.Plo in Resources */,
 				ACD938D51F4F3A4C004D2CC7 /* libglpk_la-mps.Plo in Resources */,
-				ACD938331F4F3A4B004D2CC7 /* COPYING in Resources */,
 				ACD938C71F4F3A4C004D2CC7 /* libglpk_la-amd_control.Plo in Resources */,
 				ACD938CB1F4F3A4C004D2CC7 /* libglpk_la-rdsol.Plo in Resources */,
 				ACD939051F4F3A4C004D2CC7 /* libglpk_la-bfd.Plo in Resources */,
@@ -2247,7 +2258,6 @@
 				ACD938FB1F4F3A4C004D2CC7 /* libglpk_la-rng.Plo in Resources */,
 				ACD9390C1F4F3A4C004D2CC7 /* libglpk_la-strtrim.Plo in Resources */,
 				ACD939641F4F3A4C004D2CC7 /* libglpk_la-glprgr.Plo in Resources */,
-				ACD939661F4F3A4C004D2CC7 /* Makefile.in in Resources */,
 				ACD939441F4F3A4C004D2CC7 /* libglpk_la-rdipt.Plo in Resources */,
 				ACD938D91F4F3A4C004D2CC7 /* libglpk_la-dmp.Plo in Resources */,
 				ACD938C51F4F3A4C004D2CC7 /* libglpk_la-glpios12.Plo in Resources */,
@@ -2299,7 +2309,6 @@
 				ACD938BC1F4F3A4C004D2CC7 /* libglpk_la-amd_1.Plo in Resources */,
 				ACD938E11F4F3A4C004D2CC7 /* libglpk_la-glpios10.Plo in Resources */,
 				ACD939241F4F3A4C004D2CC7 /* libglpk_la-spxat.Plo in Resources */,
-				ACD938101F4F3A4B004D2CC7 /* README in Resources */,
 				ACD939511F4F3A4C004D2CC7 /* libglpk_la-minisat.Plo in Resources */,
 				ACD938DC1F4F3A4C004D2CC7 /* libglpk_la-glpnpp06.Plo in Resources */,
 				ACD938FF1F4F3A4C004D2CC7 /* libglpk_la-amd_valid.Plo in Resources */,
@@ -2310,9 +2319,7 @@
 				ACD939251F4F3A4C004D2CC7 /* libglpk_la-bfx.Plo in Resources */,
 				ACD938AE1F4F3A4C004D2CC7 /* libglpk_la-amd_2.Plo in Resources */,
 				ACD938EC1F4F3A4C004D2CC7 /* libglpk_la-rdprob.Plo in Resources */,
-				ACD937F71F4F3A4B004D2CC7 /* README in Resources */,
 				ACD9390F1F4F3A4C004D2CC7 /* libglpk_la-cplex.Plo in Resources */,
-				ACD937F51F4F3A4B004D2CC7 /* LICENSE in Resources */,
 				ACD939101F4F3A4C004D2CC7 /* libglpk_la-cpxbas.Plo in Resources */,
 				ACD938E31F4F3A4C004D2CC7 /* libglpk_la-wrmcf.Plo in Resources */,
 				ACD939421F4F3A4C004D2CC7 /* libglpk_la-gzclose.Plo in Resources */,
@@ -2360,14 +2367,11 @@
 				ACD9395B1F4F3A4C004D2CC7 /* libglpk_la-crc32.Plo in Resources */,
 				ACD938EA1F4F3A4C004D2CC7 /* libglpk_la-compress.Plo in Resources */,
 				ACD939281F4F3A4C004D2CC7 /* libglpk_la-gridgen.Plo in Resources */,
-				ACD937F21F4F3A4B004D2CC7 /* COPYING in Resources */,
 				ACD939531F4F3A4C004D2CC7 /* libglpk_la-fvs.Plo in Resources */,
 				ACD9390B1F4F3A4C004D2CC7 /* libglpk_la-rdcc.Plo in Resources */,
 				ACD939561F4F3A4C004D2CC7 /* libglpk_la-glpipm.Plo in Resources */,
 				ACD938FA1F4F3A4C004D2CC7 /* libglpk_la-stdout.Plo in Resources */,
-				ACD937F01F4F3A4B004D2CC7 /* README in Resources */,
 				ACD9391F1F4F3A4C004D2CC7 /* libglpk_la-mc21a.Plo in Resources */,
-				ACD9382F1F4F3A4B004D2CC7 /* README in Resources */,
 				ACD938B51F4F3A4C004D2CC7 /* libglpk_la-wrmip.Plo in Resources */,
 				ACD9393F1F4F3A4C004D2CC7 /* libglpk_la-rdmip.Plo in Resources */,
 				ACD938D11F4F3A4C004D2CC7 /* libglpk_la-asnlp.Plo in Resources */,
@@ -2572,7 +2576,6 @@
 				ACD938721F4F3A4C004D2CC7 /* prob3.c in Sources */,
 				ACD938491F4F3A4C004D2CC7 /* spxnt.c in Sources */,
 				ACD938881F4F3A4C004D2CC7 /* prob1.c in Sources */,
-				ACD937F31F4F3A4B004D2CC7 /* Makefile in Sources */,
 				ACD938351F4F3A4B004D2CC7 /* amd_postorder.c in Sources */,
 				ACD938991F4F3A4C004D2CC7 /* cfg.c in Sources */,
 				ACD9383B1F4F3A4B004D2CC7 /* amd_order.c in Sources */,
@@ -2592,6 +2595,7 @@
 				ACD938631F4F3A4C004D2CC7 /* weak.c in Sources */,
 				ACD9389A1F4F3A4C004D2CC7 /* spv.c in Sources */,
 				ACD938681F4F3A4C004D2CC7 /* rdmip.c in Sources */,
+				AC427BC41F5089120043E1B6 /* Direction.swift in Sources */,
 				ACD938971F4F3A4C004D2CC7 /* glpapi09.c in Sources */,
 				ACD937D51F4F3A4B004D2CC7 /* str2int.c in Sources */,
 				ACD938821F4F3A4C004D2CC7 /* mcflp.c in Sources */,
@@ -2653,6 +2657,7 @@
 				ACD939D61F4F3B75004D2CC7 /* fhvint.c in Sources */,
 				ACD939D71F4F3B75004D2CC7 /* spychuzc.c in Sources */,
 				ACD939D81F4F3B75004D2CC7 /* time.c in Sources */,
+				AC427BC51F5089120043E1B6 /* Direction.swift in Sources */,
 				ACD939D91F4F3B75004D2CC7 /* prmip.c in Sources */,
 				ACD939DA1F4F3B75004D2CC7 /* netgen.c in Sources */,
 				ACD939DB1F4F3B75004D2CC7 /* mc13d.c in Sources */,

@@ -56,11 +56,25 @@ class GLPKFramework_MacOSTests: XCTestCase {
         XCTAssertEqual(bound.upperBound, 789.1011)
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
+    func testSampleFromDoc() {
+        let problem = SwiftGLPK(name: "Sample", direction: .maximize)
+        problem.disable32BitCastWarning = true
+        problem.addRow(withName: "p", andBound: .upperBoundOnly(value: 100))
+        problem.addRow(withName: "q", andBound: .upperBoundOnly(value: 600))
+        problem.addRow(withName: "r", andBound: .upperBoundOnly(value: 300))
+        problem.addColumn(withName: "x1", andBound: .lowerBoundOnly(value: 0), usingCoefficient: 10)
+        problem.addColumn(withName: "x2", andBound: .lowerBoundOnly(value: 0), usingCoefficient:  6)
+        problem.addColumn(withName: "x3", andBound: .lowerBoundOnly(value: 0), usingCoefficient:  4)
+        problem.loadConstraintMatrix(valuesByRow: [
+                [1, 1, 1],
+                [10, 4, 5],
+                [2, 2, 6]
+            ])
         self.measure {
-            // Put the code you want to measure the time of here.
+            problem.simplex()
         }
+        let z = problem.functionValue
+        XCTAssertEqual(z, 733.333, accuracy: 1e-3)
     }
     
 }
