@@ -329,7 +329,11 @@ public class SwiftGLPK {
     var functionValue: Double {
         return glp_get_obj_val(problemPointer)
     }
-    
+
+    /// Returns the solution variable for given index
+    public func getSolutionVariable(i: Int32) -> Double {
+        return glp_get_col_prim(problemPointer, i)
+    }
     
     // MARK: - Utilities
     func warn(message: String, function: StaticString = #function) {

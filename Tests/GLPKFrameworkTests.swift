@@ -75,6 +75,49 @@ class GLPKFramework_MacOSTests: XCTestCase {
         }
         let z = problem.functionValue
         XCTAssertEqual(z, 733.333, accuracy: 1e-3)
+        
+        
+        // Check variables giving optimal solution
+        // x1 = 33.3333; x2 = 66.6667; x3 = 0
+        let x1 = problem.getSolutionVariable(i: 1)
+        XCTAssertEqual(x1, 33.333, accuracy: 1e-3)
+        let x2 = problem.getSolutionVariable(i: 2)
+        XCTAssertEqual(x2, 66.666, accuracy: 1e-3)
+        let x3 = problem.getSolutionVariable(i: 3)
+        XCTAssertEqual(x3, 0.0, accuracy: 1e-3)
     }
+    
+    // Test factory example from
+    // https://www.pmcalculators.com/example/simplex-method-problems/
+    func testGutchiCompany() {
+        let problem = SwiftGLPK(name: "The Gutchi Company", direction: .maximize)
+        problem.disable32BitCastWarning = true
+        problem.addRow(withName: "leather", andBound: .upperBoundOnly(value: 42))
+        problem.addRow(withName: "sewing", andBound: .upperBoundOnly(value: 40))
+        problem.addRow(withName: "finishing", andBound: .upperBoundOnly(value: 45))
+        problem.addColumn(withName: "x1", andBound: .lowerBoundOnly(value: 0), usingCoefficient: 24)
+        problem.addColumn(withName: "x2", andBound: .lowerBoundOnly(value: 0), usingCoefficient: 22)
+        problem.addColumn(withName: "x3", andBound: .lowerBoundOnly(value: 0), usingCoefficient: 45)
+        problem.loadConstraintMatrix(valuesByRow: [
+                [2, 1, 3],
+                [2, 1, 2],
+                [1, 0.5, 1]
+            ])
+        self.measure {
+            problem.simplex()
+        }
+        let z = problem.functionValue
+        XCTAssertEqual(z, 882.000, accuracy: 1e-3)
+        
+        // Check variables giving optimal solution
+        // x1=0, x2=36, x3=2
+        let x1 = problem.getSolutionVariable(i: 1)
+        XCTAssertEqual(x1, 0.00, accuracy: 1e-3)
+        let x2 = problem.getSolutionVariable(i: 2)
+        XCTAssertEqual(x2, 36.00, accuracy: 1e-3)
+        let x3 = problem.getSolutionVariable(i: 3)
+        XCTAssertEqual(x3, 2.00, accuracy: 1e-3)
+    }
+    
     
 }
