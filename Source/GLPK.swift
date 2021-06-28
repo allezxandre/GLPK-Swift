@@ -331,7 +331,7 @@ public class SwiftGLPK {
     }
 
     /// Returns the solution variable for given index
-    public func getSolutionVariable(i: Int32) -> Double {
+    public func getSolutionVariable(atIndex i: Int32) -> Double {
         return glp_get_col_prim(problemPointer, i)
     }
     

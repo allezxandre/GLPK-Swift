@@ -79,11 +79,11 @@ class GLPKFramework_MacOSTests: XCTestCase {
         
         // Check variables giving optimal solution
         // x1 = 33.3333; x2 = 66.6667; x3 = 0
-        let x1 = problem.getSolutionVariable(i: 1)
+        let x1 = problem.getSolutionVariable(atIndex: 1)
         XCTAssertEqual(x1, 33.333, accuracy: 1e-3)
-        let x2 = problem.getSolutionVariable(i: 2)
+        let x2 = problem.getSolutionVariable(atIndex: 2)
         XCTAssertEqual(x2, 66.666, accuracy: 1e-3)
-        let x3 = problem.getSolutionVariable(i: 3)
+        let x3 = problem.getSolutionVariable(atIndex: 3)
         XCTAssertEqual(x3, 0.0, accuracy: 1e-3)
     }
     
@@ -111,11 +111,11 @@ class GLPKFramework_MacOSTests: XCTestCase {
         
         // Check variables giving optimal solution
         // x1=0, x2=36, x3=2
-        let x1 = problem.getSolutionVariable(i: 1)
+        let x1 = problem.getSolutionVariable(atIndex: 1)
         XCTAssertEqual(x1, 0.00, accuracy: 1e-3)
-        let x2 = problem.getSolutionVariable(i: 2)
+        let x2 = problem.getSolutionVariable(atIndex: 2)
         XCTAssertEqual(x2, 36.00, accuracy: 1e-3)
-        let x3 = problem.getSolutionVariable(i: 3)
+        let x3 = problem.getSolutionVariable(atIndex: 3)
         XCTAssertEqual(x3, 2.00, accuracy: 1e-3)
     }
     
